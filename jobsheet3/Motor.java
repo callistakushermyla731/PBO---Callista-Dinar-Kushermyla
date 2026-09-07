@@ -35,7 +35,9 @@ public class Motor {
             System.out.println("Kecepatan tidak boleh lebih dari 0 jika mesin off");
         } else if (kecepatan > 100) {
             System.out.println("Kecepatan maksimal adalah 100");
-        }else {
+        } else if (kecepatan < 0) {
+            System.out.println("Kecepatan tidak boleh negatif");
+        } else {
             this.kecepatan = kecepatan;
         }
     }
