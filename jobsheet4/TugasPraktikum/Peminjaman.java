@@ -17,7 +17,7 @@ public class Peminjaman {
 
     public void mulaiPeminjaman() {
         if (sepeda.cekKetersediaan()) {
-            sepeda.ubahStatus("Dipinjam");
+            sepeda.setStatus("Dipinjam");
             System.out.println("Peminjaman dimulai.");
         } else {
             System.out.println("Sepeda tidak tersedia.");
@@ -25,7 +25,7 @@ public class Peminjaman {
     }
 
     public void selesaikanPeminjaman() {
-        sepeda.ubahStatus("Tersedia");
+        sepeda.setStatus("Tersedia");
         System.out.println("Peminjaman selesai.");
     }
 

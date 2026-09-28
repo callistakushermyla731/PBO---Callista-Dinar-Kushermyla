@@ -15,8 +15,12 @@ public class Sepeda {
         return status.equals("Tersedia");
     }
 
-    public void ubahStatus(String statusBaru) {
-        this.status = statusBaru;
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 
     public void tampilkanData() {
@@ -31,9 +35,5 @@ public class Sepeda {
 
     public String getJenis() {
         return jenis;
-    }
-
-    public String getStatus() {
-        return status;
     }
 }

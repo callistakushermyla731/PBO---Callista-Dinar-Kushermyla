@@ -3,13 +3,13 @@ package TugasPraktikum;
 public class GOWESDemo {
     public static void main(String[] args) {
 
-        // Membuat objek Mahasiswa
+        // membuat objek Mahasiswa
         Mahasiswa mhs1 = new Mahasiswa("254107060087", "Callista", "Aktif");
 
-        // Membuat objek Sepeda
+        // membuat objek Sepeda
         Sepeda sepeda1 = new Sepeda("S001", "Sepeda Listrik", "Tersedia");
 
-        // Membuat objek Peminjaman
+        // membuat objek Peminjaman
         Peminjaman pinjam1 = new Peminjaman("P001", "2026-09-21", 3, mhs1, sepeda1);
 
         System.out.println("=== DATA MAHASISWA ===");
