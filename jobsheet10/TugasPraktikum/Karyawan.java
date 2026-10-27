@@ -2,12 +2,14 @@ public abstract class Karyawan {
     public String nama;
     public String tempatKerja;
     public int gaji;
+    public int totalGaji;
 
     
     public Karyawan() {
         nama = "";
         tempatKerja = "";
         gaji = 0;
+        totalGaji = 0;
     }
 
 
@@ -15,6 +17,7 @@ public abstract class Karyawan {
         this.nama = nama;
         this.tempatKerja = tempatKerja;
         this.gaji = gaji;
+        this.totalGaji = 0;
     }
 
 

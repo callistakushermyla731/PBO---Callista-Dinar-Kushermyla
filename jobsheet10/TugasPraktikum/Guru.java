@@ -18,11 +18,11 @@ public class Guru extends Karyawan {
 
 
     public void hitungGaji() {
-        gaji = gaji + (jtm * 50000);
+        totalGaji = gaji + (jtm * 50000);
     }
 
 
     public String getInfo() {
-        return super.getInfo() + "\nNIP: " + nip + "\nGaji: " + gaji;
+        return super.getInfo() + "\nNIP: " + nip + "\nJumlah Jam Mengajar: " + jtm + "\nTotal Gaji: Rp" + totalGaji;
     }
 }

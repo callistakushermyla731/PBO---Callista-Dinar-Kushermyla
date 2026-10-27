@@ -15,10 +15,10 @@ public class Dokter extends Karyawan {
     }
 
     public void hitungGaji() {
-        gaji = gaji + (pasien * 100000);
+        totalGaji = gaji + (pasien * 100000);
     }
 
     public String getInfo() {
-        return super.getInfo() + "\nSIP: " + sip + "\nJumlah Pasien: " + pasien + "\nGaji: " + gaji;
+        return super.getInfo() + "\nSIP: " + sip + "\nJumlah Pasien: " + pasien + "\nTotal Gaji: Rp" + totalGaji;
     }
 }

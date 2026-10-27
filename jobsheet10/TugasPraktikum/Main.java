@@ -16,6 +16,7 @@ public class Main {
             "1987654322",
             24
         );
+        guru2.hitungGaji();
 
         Dokter dokter1 = new Dokter();
         dokter1.nama = "Dr. Andi Wijaya";
@@ -31,6 +32,7 @@ public class Main {
             "Dokter23456789",
             15
         );
+        dokter2.hitungGaji();
         
         System.out.println("=== DATA GURU 1 ===");
         System.out.println(guru1.getInfo());
