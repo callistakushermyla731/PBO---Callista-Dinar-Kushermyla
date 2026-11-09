@@ -9,7 +9,7 @@ public class Dosen extends Pegawai {
         this.nidn = nidn;
     }
 
-    public void displayInnfo() {
+    public void displayInfo() {
         super.displayInfo();
         System.out.println("NIDN: " + nidn);
     }
