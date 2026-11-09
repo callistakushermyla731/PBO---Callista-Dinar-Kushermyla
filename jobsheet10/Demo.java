@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+
 public class Demo {
     public static void main(String[] args) {
         Dosen dosen1 = new Dosen("19940201", "Widia, S.Kom M.Kom", "199402");
@@ -12,5 +13,16 @@ public class Demo {
         System.out.println(newDosen.nama);
         System.out.println(newDosen.nidn);
         newDosen.mengajar();
+    }
+
+    public static void train(Pegawai pegawai) {
+        System.out.println("Memberikan pelatihan untuk pegawai");
+        pegawai.displayInfo();
+
+        
+        //hanya test
+        System.out.println(pegawai.nidn);
+        System.out.println(pegawai.kategori);
+        pegawai.mengajar();
     }
 }
