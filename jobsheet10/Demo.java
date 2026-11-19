@@ -5,8 +5,11 @@ public class Demo {
         Dosen dosen1 = new Dosen("19940201", "Widia, S.Kom M.Kom", "199402");
         TenagaKependidikan tendik1 = new TenagaKependidikan("19750301", "Aida, A.Md.", "Tenaga Administrasi");
 
-        train(dosen1);
-        train(tendik1);
+        Pegawai pegawai1 = (Pegawai) dosen1;
+        Pegawai pegawai2 = (Pegawai) tendik1;
+
+        train(pegawai1);
+        train(pegawai2);
     }
 
     public static void train(Pegawai pegawai) {
@@ -15,6 +18,8 @@ public class Demo {
         System.out.println("Menginfokan SOP/Juknis");
 
         if (pegawai instanceof Dosen) {
+            Dosen dosen = (Dosen) pegawai;
+
             System.out.println("Memberikan pelatihan pedagogik");
         }
     }
